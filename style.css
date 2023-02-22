@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 15vh;
+    top:0;
+    padding: 0 20px;
+}
+.left img{
+    width: 100px;
+    height: 100px;
+}
+nav{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 5px;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    transition: all .5s ease;
+}
+nav ul li:hover{
+    background-color: #f39c12;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.container_info{
+    width: 100%;
+    height: 85vh;
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_info .info{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    text-align: justify;
+    background-color: rgba(250, 250, 250, 0.5);
+    height: 50%;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.info h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+.info p{
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    border: 1px solid black ;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: all .5s ease;
+}
+
+button:hover{
+    box-shadow: 5px 5px 5px #00000027;
+    cursor: pointer;
+    background-color:  #f39c12;
+    color: #fff;
+    transition: all .5s ease;
+}
+
+@media (max-width: 680px){
+    header{
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+    }
+    nav{
+        font-size: 3.4vw;
+        margin-bottom: 5px;
+    }
+    .container_info{
+        width: 100%;
+    }
+    .container_info .info{
+        width: 90%;
+        height: auto;
+    }
+    .info h2{
+        margin-top: 20px;
+    }
+    button{
+        margin-bottom: 20px;
+    }
+}
